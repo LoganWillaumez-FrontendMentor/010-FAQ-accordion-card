@@ -74,21 +74,29 @@ li:last-child {
   justify-content: space-between;
   color: #4b4c5f;
   align-items: center;
+  cursor: pointer;
+  margin-bottom: 12px;
 }
 .arrow {
   width: 10px;
   height: 7px;
+  transition: transform 250ms ease-in-out;
 }
 .faqtitle {
   font-size: 13px;
   line-height: 13px;
-  margin-bottom: 12px;
+  color: #4b4c5f;
+  transition: color 250ms ease-in-out;
 }
 .submenu {
   font-size: 12px;
   line-height: 18px;
   color: #787887;
-  display: none;
+  margin-bottom: 16px;
+  transform-origin: top;
+  transform: scaleY(0);
+  height: 0;
+  transition: all 250ms ease-in-out;
 }
 main {
   width: 100%;
@@ -101,6 +109,20 @@ main {
   object-fit: cover;
   transform: scale(0.5);
 }
+/* .title:hover ~ .submenu {
+  transform: scaleY(1);
+  height: initial;
+}
+.title:hover .faqtitle {
+  color: #1e1f36;
+  font-weight: 700;
+}
+.title:hover .arrow {
+  transform: rotate(180deg);
+} */
+
+/* Transform */
+
 @media only screen and (min-width: 1440px) {
   .card {
     width: 920px;
