@@ -43,7 +43,7 @@ figure {
   top: -110px;
 }
 .picture {
-  background-image: url("/images/illustration-woman-online-desktop.svg");
+  background-image: url("../images/illustration-woman-online-desktop.svg");
   background-size: cover;
   width: 237px;
   height: 180px;
@@ -53,7 +53,7 @@ figure {
   position: absolute;
   top: 110px;
   left: 0;
-  background: url("/images/bg-pattern-mobile.svg");
+  background: url("../images/bg-pattern-mobile.svg");
   width: 240px;
   height: 145px;
   background-size: contain;
@@ -153,7 +153,7 @@ main {
     height: 100%;
   }
   .picture {
-    background-image: url("/images/illustration-woman-online-desktop.svg");
+    background-image: url("../images/illustration-woman-online-desktop.svg");
     width: 472px;
     height: 359px;
     position: relative;
@@ -170,7 +170,7 @@ main {
     left: initial;
     top: -210px;
     right: 0;
-    background: url("/images/bg-pattern-desktop.svg");
+    background: url("../images/bg-pattern-desktop.svg");
     background-position: bottom;
   }
   .box {
