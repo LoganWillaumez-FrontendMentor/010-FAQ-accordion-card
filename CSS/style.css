@@ -19,17 +19,21 @@ h1 {
   margin-bottom: 38px;
 }
 .container {
-  width: 327px;
-  background-color: #ffffff;
-  border-radius: 23px;
-  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
-  /* height: 535px; */
+  position: relative;
+}
+.card {
+  width: inherit;
+  height: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   position: relative;
   padding: 132px 24px 48px 24px;
+  width: 327px;
+  background-color: #ffffff;
+  border-radius: 23px;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
 }
 ul {
   list-style: none;
@@ -38,10 +42,22 @@ figure {
   position: absolute;
   top: -110px;
 }
+.picture {
+  background-image: url("/images/illustration-woman-online-desktop.svg");
+  background-size: cover;
+  width: 237px;
+  height: 180px;
+  object-fit: cover;
+}
 .shadow {
   position: absolute;
   top: 110px;
   left: 0;
+  background: url("/images/bg-pattern-mobile.svg");
+  width: 240px;
+  height: 145px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 li {
   display: flex;
@@ -66,6 +82,7 @@ li:last-child {
 .faqtitle {
   font-size: 13px;
   line-height: 13px;
+  margin-bottom: 12px;
 }
 .submenu {
   font-size: 12px;
@@ -73,9 +90,58 @@ li:last-child {
   color: #787887;
   display: none;
 }
-.faqtitle {
-  margin-bottom: 12px;
-}
 main {
   width: 100%;
+}
+.box {
+  position: absolute;
+  top: -90px;
+  left: -10px;
+  z-index: 2;
+  object-fit: cover;
+  transform: scale(0.5);
+}
+@media only screen and (min-width: 1440px) {
+  .card {
+    width: 920px;
+    max-width: 920px;
+    height: 509px;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 65px 95px 83px 475px;
+    overflow: hidden;
+  }
+  main {
+    justify-content: flex-end;
+    width: 350px;
+    text-align: left;
+    height: 100%;
+  }
+  .picture {
+    background-image: url("/images/illustration-woman-online-desktop.svg");
+    width: 472px;
+    height: 359px;
+    position: relative;
+    z-index: 1;
+  }
+  figure {
+    left: -84px;
+    top: 70px;
+    overflow: visible;
+  }
+  .shadow {
+    width: 964px;
+    height: 800px;
+    left: initial;
+    top: -210px;
+    right: 0;
+    background: url("/images/bg-pattern-desktop.svg");
+    background-position: bottom;
+  }
+  .box {
+    display: initial;
+    left: -95px;
+    top: 205px;
+    transform: scale(1);
+  }
 }
