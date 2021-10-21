@@ -65,6 +65,7 @@ li {
   text-align: left;
   border-bottom: 1px solid #e8e8ea;
   margin: 18px 0;
+  transition: all 250ms ease-in-out;
 }
 li:last-child {
   margin-bottom: 0;
@@ -96,7 +97,8 @@ li:last-child {
   transform-origin: top;
   transform: scaleY(0);
   height: 0;
-  transition: all 250ms ease-in-out;
+  opacity: 0;
+  transition: all 250ms ease;
 }
 main {
   width: 100%;
@@ -122,7 +124,18 @@ main {
 } */
 
 /* Transform */
-
+.title.active ~ .submenu {
+  transform: scaleY(1);
+  height: initial;
+  opacity: 1;
+}
+.title.active .faqtitle {
+  color: #1e1f36;
+  font-weight: 700;
+}
+.title.active .arrow {
+  transform: rotate(180deg);
+}
 @media only screen and (min-width: 1440px) {
   .card {
     width: 920px;
