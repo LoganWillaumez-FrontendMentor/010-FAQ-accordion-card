@@ -14,7 +14,6 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 13px;
   font-weight: normal;
-  position: relative;
   padding-top: 148px;
   padding-bottom: 38px;
 }
@@ -38,7 +37,7 @@ h1 {
   background-color: #ffffff;
   border-radius: 23px;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
-  overflow: hidden;
+  position: relative;
 }
 ul {
   list-style: none;
@@ -142,6 +141,9 @@ main {
   transform: rotate(180deg);
 }
 @media only screen and (min-width: 1440px) {
+  body {
+    padding: 0;
+  }
   .card {
     width: 920px;
     max-width: 920px;
@@ -167,7 +169,6 @@ main {
   figure {
     left: -84px;
     top: 70px;
-    overflow: visible;
   }
   .shadow {
     width: 964px;
