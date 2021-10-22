@@ -116,17 +116,6 @@ li:last-child {
   object-fit: cover;
   transform: scale(0.5);
 }
-/* .title:hover ~ .submenu {
-  transform: scaleY(1);
-  height: initial;
-}
-.title:hover .faqtitle {
-  color: #1e1f36;
-  font-weight: 700;
-}
-.title:hover .arrow {
-  transform: rotate(180deg);
-} */
 
 /* Transform */
 .faqtitle:hover {
@@ -143,7 +132,7 @@ li:last-child {
 .title.active .arrow {
   transform: rotate(180deg);
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1000px) {
   body {
     padding: 0;
   }
