@@ -129,6 +129,9 @@ li:last-child {
 } */
 
 /* Transform */
+.faqtitle:hover {
+  color: #f47b56;
+}
 .title.active ~ .submenu {
   opacity: 1;
   height: 34px;
