@@ -11,6 +11,6 @@ Front end mentor challenge : [Link](https://www.frontendmentor.io/challenges/faq
   
 ## Demo
 
-https://loganwillaumez.github.io/FAQ-accordion-card/
+https://loganwillaumez-frontendmentor.github.io/010-FAQ-accordion-card/
 
   
